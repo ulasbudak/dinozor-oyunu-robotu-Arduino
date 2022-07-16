@@ -1,0 +1,28 @@
+#include <Servo.h>
+Servo a;
+
+void setup()
+{ 
+  a.attach(D5);
+
+}
+ 
+void loop()
+{
+ 
+  int isik = analogRead(A0);
+ if(isik<755)
+ {
+   a.write(15);
+   
+  
+ }
+ else
+ {
+  a.write(45);
+  delay(100);
+  a.write(15);
+  delay(100);
+ }
+}
+ 
