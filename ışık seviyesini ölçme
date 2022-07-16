@@ -1,0 +1,13 @@
+void setup()
+{ 
+  
+  Serial.begin(9600);
+}
+ 
+void loop()
+{
+ int isik_degeri = analogRead(A0);
+Serial.println(isik_degeri);
+delay(100);  
+ 
+}
